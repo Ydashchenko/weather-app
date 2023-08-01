@@ -7,6 +7,32 @@
     <script defer src="main.js"></script>
 </head>
 <body>
-    
+    <header>
+        <h1>Weather App</h1>
+    </header>
+
+    <main>
+        <form>
+            <input id="enter-city" type="text" placeholder="Enter city name...">
+            <button id="search" type="submit">Search</button>
+        </form>
+        <div class="" id="forecast">
+            <span id="general-city-country"></span>
+            <p id="temperature"></p>
+            <p id="feels-like"></p>
+            <p id="humidity"></p>
+            <p id="wind"></p>
+            <button id="switch"></button>
+        </div>
+    </main>
+
+    <footer>
+        Copyright ©
+        <script>
+            document.write(new Date().getFullYear())
+        </script>
+        <a href="https://github.com/Ydashchenko" target="_blank">Yevhenii Dashchenko</a>
+        <a href="https://github.com/Ydashchenko" target="_blank"><img src="../src/images/white-gh.jpeg" alt="github-logo" class="icon"></a>
+    </footer>
 </body>
 </html>
