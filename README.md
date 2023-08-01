@@ -1,2 +1,2 @@
 # weather-app
-Weather app using free tier weather API.
+[Weather app](https://ydashchenko.github.io/weather-app/dist/) using free tier weather API.
