@@ -28,6 +28,7 @@ form * {
 }
 
 button {
+    cursor: pointer;
     background-color: rgb(20, 184, 173);
     border-radius: 5px;
     color: white;

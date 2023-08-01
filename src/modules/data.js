@@ -14,14 +14,20 @@ export function getCityNameFromInput() {
 }
 
 export async function getData(cityName) {
-    const apiUrl = `https://api.weatherapi.com/v1/current.json?key=4ea5ff7237674b3481e110340233007&q=${cityName}`
-    const response = await fetch(apiUrl, {mode: 'cors'})
-    const cityData = await response.json()
-    if (cityData.error) {
-        alert(cityData.error.message)
-        throw new Error(cityData.error.message)
+    try {
+        const apiUrl = `https://api.weatherapi.com/v1/current.json?key=4ea5ff7237674b3481e110340233007&q=${cityName}`
+        const response = await fetch(apiUrl, {mode: 'cors'})
+        const cityData = await response.json()
+        if (cityData.error) {
+            alert(cityData.error.message)
+            return null
+        }
+        return cityData
+    } catch (error) {
+        console.error('An error occurred while fetching weather data: ', error.message)
+        return null
     }
-    return cityData
+
 }
 
 export { cityName, mSystem }
