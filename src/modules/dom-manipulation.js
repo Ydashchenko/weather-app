@@ -3,6 +3,7 @@ import { getData, cityName, mSystem } from "./data"
 export async function addForecast() {
     const cityData = await getData(cityName.value)
 
+    const forecast = document.getElementById('forecast')
     const genCityCountry = document.getElementById('general-city-country')
     const temperature = document.getElementById('temperature')
     const feelsLike = document.getElementById('feels-like')
@@ -28,5 +29,12 @@ export async function addForecast() {
         switchButton.innerHTML = `Switch to °C and km/h`
     }
 
+    forecast.style.display = 'block'
 }
 
+/*function setBackground(weather) {
+    const main = document.querySelector('main')
+    main.style.backgroundImage = 'url('')'
+
+}
+*/
