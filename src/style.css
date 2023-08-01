@@ -1,0 +1,74 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    padding: 2rem;
+    text-align: center;
+}
+
+form * {
+    font-size: 20px;
+}
+
+button {
+    background-color: rgb(20, 184, 173);
+    border-radius: 5px;
+    color: white;
+    border: rgb(20, 184, 173) solid 1px; 
+}
+
+#switch {
+    border: white solid 1px;
+    font-size: 20px;
+}
+
+#forecast {
+    text-align: center;
+    font-size: 20px;
+    background-color: rgb(20, 184, 173);
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+#general-city-country {
+    font-size: 30px;
+}
+
+footer,header  {
+    background-color: rgb(20, 184, 173);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 10px;
+    font-weight: 400;
+}
+
+footer a {
+    font-weight: 400;
+    text-decoration: none;
+    color: inherit;
+}
+
+footer img {
+    width: 25px;
+    height: 25px;
+}
